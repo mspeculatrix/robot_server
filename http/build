@@ -1,0 +1,6 @@
+#!/bin/bash
+IMAGE_NAME="robot-http"
+docker image rm $IMAGE_NAME
+echo "Building: $IMAGE_NAME"
+# Build script for docker image
+docker build -t $IMAGE_NAME .

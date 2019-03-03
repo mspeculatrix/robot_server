@@ -1,0 +1,32 @@
+# docker-compose for robot server
+
+version: '3'
+
+services:
+  http:
+    build: ./http
+    image: robot-http
+    container_name: robot-http
+    restart: always
+    # when development is complete, remove following line
+    volumes: ['./http/html:/var/www/html']
+    # might want to create a normal volume for persistence across
+    # runs of a container
+    ports:
+      - '8081:80'     # for website
+      - '8181:8181'   # for websockets
+    networks:
+      - robotnet
+
+  node-api:
+    build: ./api
+    image: robot-api
+    container_name: robot-api
+    restart: always
+    ports:
+      - '5000:5000'
+    networks:
+      - robotnet
+
+networks:
+  robotnet:
