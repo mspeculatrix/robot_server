@@ -1,4 +1,7 @@
 # robot_server
+
+Blog post: https://mansfield-devine.com/speculatrix/2019/01/sheldon-robot-the-web-app-on-docker/
+
 This is a Dockerised server meant to provide control and monitoring of my robot project.
 
 The idea is that these containers can be spun up on any computer residing on the same local network as the robot. For example, I've been developing them on my desktop machine, but I can as easily run the containers on my laptop or even the LattePanda Alpha that is ultimately intended as the robot controller.
