@@ -12,4 +12,4 @@ It consists of the following servers:
 This is an Apache/PHP/JavaScript server. It has pages that use JavaScript to communicate with the robot via HTTP GET requests and websockets. It also has a PHP-based Ajax server script to deal with communication from the robot.
 
 ## api
-This is a Node.js server that deals with HTTP GET requests. I wrote this simply to learn a bit of Node and it's not currently serving any useful function. This will probably replace the PHP-based one on the server above. I may ultimately replace the Apache/PHP server with the Node.js one, perhaps using Express to server pages. We'll see.
+This is a Node.js server that deals with HTTP GET requests. I wrote this simply to learn a bit of Node and it's not currently serving any useful function. This will probably replace the PHP-based one on the server above. However, I may ultimately replace the Apache/PHP server with the Node.js one, perhaps using Express to server pages. We'll see.
